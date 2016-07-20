@@ -1,0 +1,458 @@
+html {
+                        -webkit-text-size-adjust: 100%;
+                        -moz-text-size-adjust: 100%;
+                        -ms-text-size-adjust: 100%;
+                        font-family: 'Montserrat', 'Arial Black', sans-serif;
+                        font-size: 18px;
+                        color: #FFF;
+}
+
+html, body {
+                        height: 100%;
+                        width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+}
+
+/* text */
+h1 {
+                        font-size: 5.5vw;
+                        font-weight: bold;
+                        color: #F0F0F0;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin-top: 1em;
+                        margin-bottom: -1em;
+}
+
+h2 {
+                        font-size: 1em;
+                        font-weight: bold;
+
+                        margin-bottom: 1.6em;
+
+                        color: #333;
+                        text-transform: uppercase;
+                        text-align: center;
+}
+
+h2:hover {
+                        color: #888;
+}
+
+h3 {
+                        font-size: .8em;
+                        font-weight: normal;
+                        color: #333;
+                        text-align: center;
+                        z-index: 1;
+                        line-height: 2em;
+}
+
+ul {
+                        font-size: .8em;
+                        font-weight: normal;
+                        color: #333;
+                        text-align: center;
+                        z-index: 1;
+                        line-height: 2em;
+                        margin-top: 20%;
+                        padding-bottom: 20%;
+}
+
+a {
+                        color: #333;
+                        text-decoration: none;
+                        font-size: .7em;
+}
+
+p {
+                        color: #F0F0F0;
+                        font-size: .7em;
+                        text-align: center;
+}
+
+/* background image */
+img.background {
+                        min-height: 100%;
+                        min-width: 1500px;
+                        width: 100%;
+                        height: auto;
+                        top: 0;
+                        left: 0;
+                        position: fixed;
+                        z-index: -3;
+}
+
+/* nav bar */
+nav {
+                        width: 100vw;
+                        /* I want the navbar to be 50px tall in whatever screen. so no em */
+                        height: 50px;
+                        position: fixed;
+                        top: 0;
+                        background: rgba(255,255,255,.1);
+                        z-index:999;
+                        transition: all 0.2s ease;
+
+                        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+                           -moz-animation: fadein 2s; /* Firefox < 16 */
+                            -ms-animation: fadein 2s; /* Internet Explorer */
+                             -o-animation: fadein 2s; /* Opera < 12.1 */
+                                animation: fadein 2s;
+
+}
+
+nav:hover {
+                        background: rgba(0,0,0,.4);
+}
+
+nav ul {
+                        padding: .55rem;
+                        margin: 0;
+                        list-style: none;
+                        text-align: center;
+}
+
+nav ul li {
+                        display: inline-block;
+                        margin: 0 1rem;
+}
+
+nav ul li a {
+                        color: #a9a9a9;
+                        font-size: 1rem;
+                        text-decoration: none;
+                        font-weight: bold;
+                        transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+                        color: #FFF;
+}
+
+/* landing page */
+#title {
+                        height: 100vh;
+                        -webkit-animation: fadein 2s;
+                        -moz-animation: fadein 2s;
+                        -ms-animation: fadein 2s;
+                        -o-animation: fadein 2s;
+                        animation: fadein 2s;
+}
+
+@keyframes fadein {
+                        from { opacity: 0; }
+                        to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+                        from { opacity: 0; }
+                        to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+                        from { opacity: 0; }
+                        to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+                        from { opacity: 0; }
+                        to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+                        from { opacity: 0; }
+                        to   { opacity: 1; }
+}
+
+  /* effect inspired by http://www.seanmccaffery.net/ */
+.svg-wrapper {
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        margin: 0 auto;
+                        width: 320px;
+                        z-index: 999;
+}
+.svg-wrapper .shape {
+                        stroke-dasharray: 140 500;
+                        stroke-dashoffset: -474;
+                        stroke-width: 8px;
+                        fill: transparent;
+                        stroke: #FFF;
+                        border-bottom: 1px solid black;
+                        transition: stroke-width 2s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.svg-wrapper .text {
+                        font-size: 1.2em;
+                        line-height: 1.2em;
+                        letter-spacing: .4em;
+                        color: #fff;
+                        top: -2.2em;
+                        position: relative;
+                        text-align: center;
+}
+.svg-wrapper:hover .shape {
+                        stroke-width: 2px;
+                        stroke-dashoffset: 0;
+                        stroke-dasharray: 760;
+}
+
+
+/* WHO - introduction */
+#intro {
+                        position: relative;
+
+                        height: 100vh;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        z-index: 1;
+                        background: rgba(238,238,233,.95);
+}
+
+#profilepic {
+                        padding-top: 30vh;
+                        position: relative;
+                        width: 150px;
+                        margin-left: auto;
+                        margin-right: auto;
+}
+
+#profilepic img {
+                        position: absolute;
+                        height: 150px;
+                        width: 150px;
+                        -webkit-transition: opacity 1s ease-in-out;
+                        -moz-transition: opacity 1s ease-in-out;
+                        -o-transition: opacity 1s ease-in-out;
+                        transition: opacity 1s ease-in-out;
+                        z-index: 1;
+}
+
+#profilepic img.insert2:hover {
+                        opacity: 0;
+}
+#introtxt {
+                        padding-top: 30vh;
+                        position: relative;
+}
+
+/* WHAT - abilities */
+#abilities {
+                        height: 100vh;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-left: 25%;
+                        padding-right: 25%;
+                        z-index: 1;
+
+                        width: 50%;
+
+                        background: rgba(247,245,245,.95);
+}
+
+#abilities h2 {
+                        margin-top: 17.5vh;
+                        margin-bottom: 7.5vh;
+}
+
+#abilities ul, li, b {
+                        margin-top: 0px;
+}
+
+div.box {
+                        margin: 0 0 0 0;
+                        float: left;
+                        clear: none;
+                        width: 50%;
+                        height: 40vh;
+                        border: 1px;
+                        text-align: center;
+                        color: #F0F0F0;
+                        z-index: 1;
+}
+
+div.box h3 {
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        text-align: center;
+}
+
+div.box a {
+                        font-size: 1em;
+                        font-weight: normal;
+                        color: rgb(120,120,120);
+                        text-align: center;
+                        z-index: 1;
+                        line-height: 2em;
+                        font-weight: bold;
+}
+
+/* WHY - portfolio */
+#work {
+                        z-index: 1;
+                        background: rgba(247,245,245,.95);
+                        position: relative;
+                        height: 100vh;
+                        overflow: hidden;
+
+}
+
+#work img {
+                        height: 100vh;
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        -webkit-transition: opacity 1s ease-in-out;
+                        -moz-transition: opacity 1s ease-in-out;
+                        -o-transition: opacity 1s ease-in-out;
+                        transition: opacity 1s ease-in-out;
+                        z-index: 1;
+}
+
+#work img.insert2:hover {
+                        opacity: 0;
+}
+
+#work a {
+                        z-index: 2;
+                        position: absolute;
+                        color: white;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        font-size: 5em;
+                        font-weight: bold;
+                        top: 40vh;
+                        transition: all 0.25s ease;
+}
+
+#work a:hover {
+                        color: #000;
+}
+
+/* WHERE - location */
+#where {
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 90vh;
+                        background-color: #CCC;
+}
+
+/* footer */
+#footer {
+                        position: relative;
+                        bottom: 0;
+                        padding-top: 4vh;
+                        padding-bottom: 7.5vh;
+                        background: #DEDEDE;
+                        z-index: 3;
+}
+
+#copyright {
+                        position: absolute;
+                        color: #333;
+                        float: left;
+                        left: 5vw;
+}
+
+#links {
+                        position: absolute;
+                        float: right;
+                        word-spacing: 1.3em;
+                        right: 5vw;
+}
+
+#links a {
+                        transition: all 0.25s ease;
+}
+
+#links a:hover {
+                        color: #000;
+}
+
+/* media query */
+@media (-webkit-min-device-pixel-ratio: 2) {
+
+  nav ul li {
+                          display: inline-block;
+                          margin: 0 .2rem;
+  }
+
+  nav ul li a {
+                          font-size: .8rem;
+  }
+
+  #profilepic {
+                        padding-top: 15vh;
+}
+
+  #introtxt {
+                        padding-top: 30vh;
+                        position: relative;
+                        width: 85vw;
+                        margin-left: auto;
+                        margin-right: auto;
+}
+
+  #abilities {
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                        width: 90%;
+}
+
+  #abilities h2 {
+                        margin-top: 12.5vh;
+                        margin-bottom: 3vh;
+                        font-size: .8em;
+}
+
+  div.box {
+                        height: 14em;
+}
+
+  div.box ul {
+                        font-size: .75em;
+}
+
+  #work {
+                        width: 100vw;
+}
+
+  #work img {
+                        width: auto;
+                        overflow: hidden;
+}
+
+  #work a {
+                        font-size: 3em;
+}
+
+  #where {
+                        height: 82.5vh;
+}
+
+  #footer {
+                        padding-top: 3vh;
+                        padding-bottom: 5vh;
+}
+
+  #copyright {
+                        position: relative;
+                        float: none;
+                        text-align: center;
+                        left: 0;
+                        margin-top: 2.5vh;
+}
+
+  #links {
+                        position: relative;
+                        word-spacing: 1em;
+                        float: none;
+                        text-align: center;
+                        right: 0;
+}
+
+}
