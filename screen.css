@@ -218,8 +218,8 @@ nav ul li a:hover {
 
 #profilepic img {
                         position: absolute;
-                        height: 150px;
-                        width: 150px;
+                        height: auto;
+                        width: 100%;
                         -webkit-transition: opacity 1s ease-in-out;
                         -moz-transition: opacity 1s ease-in-out;
                         -o-transition: opacity 1s ease-in-out;
